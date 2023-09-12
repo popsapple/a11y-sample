@@ -23,7 +23,7 @@
     <fieldset>
         <legend>기본사항</legend>
         <label for="id">아이디: </label><input bind:this={id_ele} id="id" type="text" /><br />
-        <span class={warning? "visible" : "none"} bind:this={warning_ele} tabindex={warning == false ? -1 : 0}>아이디를 입력 해주세요</span>
+        <span class={warning? "visible" : "none"} bind:this={warning_ele} tabindex={warning == false ? -1 : 0} aria-live={warning? "assertive" : "off"}>아이디를 입력 해주세요</span>
         <label for="passowrd">비밀번호: </label><input id="passowrd" type="passowrd" />
     </fieldset>
     <fieldset>

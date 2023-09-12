@@ -8,8 +8,12 @@
 	import Layout from '../components/Layout.svelte';
 	import BadLayout from '../components/BadLayout.svelte';
 	import List from '../components/List.svelte';
+	import BadList from '../components/BadList.svelte';
 	import Table from '../components/Table.svelte';
+	import BadTable from '../components/BadTable.svelte';
 	import Home from '../components/Home.svelte';
+	import BadSlider from '../components/BadSwiper.svelte';
+	import Slider from '../components/Swiper.svelte';
 	//import CanvasDrawWave from '../components/CanvasDrawWave.svelte';
 	//import CanvasDrawCircleWave from '../components/CanvasDrawCircleWave.svelte';
 	import BadForm from '../components/BadForm.svelte';
@@ -25,7 +29,11 @@
 	'/imagevideo': ImageVideo,
 	'/badimagevideo': BadImageVideo,
 	'/list': List,
+	'/badlist': BadList,
 	'/table': Table,
+	'/badtable': BadTable,
+	'/badslider': BadSlider,
+	'/slider': Slider,
 	//'/wave': CanvasDrawWave,
 	//'/criclewave': CanvasDrawCircleWave
 }} />

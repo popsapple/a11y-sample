@@ -1,6 +1,6 @@
 <script lang="ts">
     let id_ele: HTMLInputElement | null = null;
-    let warning_ele: HTMLSpanElement | null = null;
+    //let warning_ele: HTMLSpanElement | null = null;
     let warning = false;
     let input_male: HTMLInputElement | null = null;
     let input_female: HTMLInputElement | null = null;
@@ -14,7 +14,7 @@
 </script>
 <form on:submit={() =>onSubmit()}>
     아이디: <input bind:this={id_ele} type="text" /><br />
-    <span class={warning? "visible" : "none"} bind:this={warning_ele}>아이디를 입력 해주세요</span>
+    <span class={warning? "visible" : "none"} role="alert">아이디를 입력 해주세요</span>
     <br /><br /><br />
     비밀번호: <input type="passowrd" />
     <br /><br /><br />
