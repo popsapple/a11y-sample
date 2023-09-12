@@ -11,3 +11,8 @@
 	<a href="/list" use:link>list</a>
 	<a href="/table" use:link>table</a>
 </nav>
+<style>
+    * {
+		font-size: 14px;
+    }
+</style>
