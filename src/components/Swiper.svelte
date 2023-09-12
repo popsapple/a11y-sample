@@ -81,9 +81,9 @@
     <button disabled={activeIndex === 0 ? true : false} on:click={() =>customswiper?.swiper?.slidePrev()}>이전</button>
     <button disabled={activeIndex === 2 ? true : false} on:click={() =>customswiper?.swiper?.slideNext()}>다음</button>
     <ul class="indigator">
-      <li><button class={activeIndex === 0 ? 'active' : ''} aria-labelledby="slide1" on:click={() =>onMove(0)}>첫번째 슬라이드 {activeIndex === 0 ? '열림' : '닫힘'}</button></li>
-      <li><button class={activeIndex === 1 ? 'active' : ''} aria-labelledby="slide2" on:click={() =>onMove(1)}>두번째 슬라이드 {activeIndex === 1 ? '열림' : '닫힘'}</button></li>
-      <li><button class={activeIndex === 2 ? 'active' : ''} aria-labelledby="slide3" on:click={() =>onMove(2)}>세번째 슬라이드 {activeIndex === 2 ? '열림' : '닫힘'}</button></li>
+      <li><button class={activeIndex === 0 ? 'active' : ''} aria-controls="slide1" aria-label="1 of 1 {activeIndex === 0 ? '선택됨' : '해제됨'}" on:click={() =>onMove(0)}>첫번째</button></li>
+      <li><button class={activeIndex === 1 ? 'active' : ''} aria-controls="slide1" aria-label="1 of 2 {activeIndex === 1 ? '선택됨' : '해제됨'}" on:click={() =>onMove(1)}>두번째</button></li>
+      <li><button class={activeIndex === 2 ? 'active' : ''} aria-controls="slide1" aria-label="1 of 3 {activeIndex === 2 ? '선택됨' : '해제됨'}" on:click={() =>onMove(2)}>세번째</button></li>
     </ul>
   </div>
   <p>
