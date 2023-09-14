@@ -12,3 +12,9 @@
     <span>4. 1:1상담</span>
     <span>5. 스마트플래너</span>
 </div>
+
+<style>
+    * {
+        font-size: 14px;
+    }
+</style>

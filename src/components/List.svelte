@@ -16,3 +16,20 @@
         <li>스마트플래너</li>
     </ol>
 </section>
+<style>
+* {
+    font-size: 14px;
+}
+ol {list-style-type: decimal;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 25px;
+}
+ol li {
+
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+</style>

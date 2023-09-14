@@ -51,4 +51,7 @@
     footer, footer * {
         font-size: 20px;
     }
+    nav {
+        font-size: 15px;
+    }
 </style>
