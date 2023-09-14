@@ -28,7 +28,7 @@
     </fieldset>
     <fieldset>
         <legend>성별</legend>
-        <label for="male">남</label><input type="radio" class='gender frist' name='gender' id="male" value='m' bind:this={input_male}/><span on:click={() => input_male ? input_male.checked = true : ''}></span>
+        <label for="male">남</label><input type="radio" class='gender frist' name='gender' id="male" value='m' checked bind:this={input_male}/><span on:click={() => input_male ? input_male.checked = true : ''}></span>
         <label for="female">여</label><input type="radio" class='gender' name='gender' id="female" value='f' bind:this={input_female}/><span on:click={() => input_female ? input_female.checked = true : ''}></span>
     </fieldset>
     <fieldset>
@@ -69,6 +69,9 @@
         &:checked+span {
             border: 1px solid skyblue;
             background-color: blue;
+        }
+        &:focus+span {
+            border: 1px solid red;
         }
     }
 </style>

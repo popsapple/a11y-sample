@@ -25,10 +25,10 @@
     aria-hidden={help_open == false ? "true" : "false"}
     bind:this={quicknavi}
 >
-    <button aria-label="클릭시 1절로 이동합니다" on:click={()=>document.getElementById('section1')?.focus()}>애국가1절</button>
-    <button aria-label="클릭시 2절로 이동합니다" on:click={()=>document.getElementById('section2')?.focus()}>애국가2절</button>
-    <button aria-label="클릭시 3절로 이동합니다" on:click={()=>document.getElementById('section3')?.focus()}>애국가3절</button>
-    <button aria-label="클릭시 4절로 이동합니다" on:click={()=>document.getElementById('section4')?.focus()}>애국가4절</button>
+    <button aria-label="클릭시 1절로 이동합니다" on:click={()=>{document.getElementById('section1')?.focus(); help_open = false;}}>애국가1절</button>
+    <button aria-label="클릭시 2절로 이동합니다" on:click={()=>{document.getElementById('section2')?.focus(); help_open = false;}}>애국가2절</button>
+    <button aria-label="클릭시 3절로 이동합니다" on:click={()=>{document.getElementById('section3')?.focus(); help_open = false;}}>애국가3절</button>
+    <button aria-label="클릭시 4절로 이동합니다" on:click={()=>{document.getElementById('section4')?.focus(); help_open = false;}}>애국가4절</button>
     <button on:click={() => handleKeyUp(null)} on:keydown={() => handleKeyUp(null)} name="닫기">닫기</button>
 </nav>
 <section 
